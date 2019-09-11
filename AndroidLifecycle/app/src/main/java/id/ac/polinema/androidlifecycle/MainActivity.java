@@ -3,6 +3,7 @@ package id.ac.polinema.androidlifecycle;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Toast;
 
 import java.util.logging.SocketHandler;
@@ -47,5 +48,8 @@ public class MainActivity extends AppCompatActivity {
 		super.onDestroy();
 		Toast.makeText(this,"App on Destroy", Toast.LENGTH_SHORT).show();
 
+	}
+
+	public void handleSubmit(View view) {
 	}
 }
