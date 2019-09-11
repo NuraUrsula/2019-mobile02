@@ -15,18 +15,21 @@ public class MainActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_main);
 	}
 
+	//TODO: tambahkan callback onStart() di sini
 	@Override
 	protected void onStart() {
 		super.onStart();
 		Toast.makeText( this,  "App on Start", Toast.LENGTH_SHORT).show();
 	}
 
+	//TODO: tambahkan callback onStop() di sini
 	@Override
 	protected void onStop () {
 		super.onStop();
 		Toast.makeText(this,"App on Stop", Toast.LENGTH_SHORT).show();
 	}
 
+	//TODO: lengkapi callback untuk onRestart() onResume() onPause() onDestroy()
 	@Override
 	protected void onResume() {
 		super.onResume();
@@ -45,13 +48,4 @@ public class MainActivity extends AppCompatActivity {
 		Toast.makeText(this,"App on Destroy", Toast.LENGTH_SHORT).show();
 
 	}
-
-
-
-	// TODO: tambahkan callback onStart() di sini
-
-
-	// TODO: tambahkan callback onStop() di sini
-
-	// TODO: lengkapi callback untuk onRestart() onResume() onPause() onDestroy()
 }
